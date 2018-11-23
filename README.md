@@ -14,7 +14,7 @@ Secure data storage in `PNG`
 
 While you can use `CryptoNG` as a module, encrypting any `bytes-like` objects, there is a command-line interface.
 
-Синтаксис / Syntax: `./CryptoNG.py <encrypt | decrypt> <file> <key>`
+Синтаксис / Syntax: `python3 -m CryptoNG <encrypt | decrypt> <file> <key>`
 
 | Режим     | Описание                                         |
 | --------- | ------------------------------------------------ |
@@ -30,7 +30,7 @@ While you can use `CryptoNG` as a module, encrypting any `bytes-like` objects, t
 
 All info is printed to `stderr`, so it can be easily removed by redirecting to `/dev/null`:
 
-`./CryptoNG.py <encrypt | decrypt> <file> <key> 2> /dev/null`
+`python3 -m CryptoNG <encrypt | decrypt> <file> <key> 2> /dev/null`
 
 При перенаправлении в файл через `>` записываться будет только текст из `stdout`.
 
